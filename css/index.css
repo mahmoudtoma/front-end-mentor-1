@@ -1,0 +1,178 @@
+/* Start varibales */
+:root{
+    --opcity-one: 0.7;
+    --opcity-tow: 0.5;
+    --main-margin: 30px auto 0 auto;
+    --font-weight: 900;
+}
+/* End varibales */
+/* Start Main Global Browser */
+*{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);  
+    font-family: 'Red Hat Display', sans-serif;
+}
+@media (max-width: 375px ){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
+/* End Main Global Browser */
+/* Start Main Container & box */
+.template .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.template .container .box{
+    width: 350px;
+    height: 550px;
+    background-color: white ;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+/* End Maine Container & box */
+/* Start text */
+.template .container .box .text{
+    margin: var(--main-margin);
+    text-align: center;
+    line-height: 20px;
+    width: 300px;
+}
+.template .container .box .text h2{
+    font-weight: var(--font-weight);
+    font-size: 20px;
+}
+.template .container .box .text p{
+    margin-top: 14px;
+    line-height: 1.4;
+    opacity: var(--opcity-tow);
+    font-size: 14px;
+}
+/* End text */
+/* Start Buy */
+.template .container .box .buy{
+    display: flex;
+    margin: var(--main-margin);
+    width: 250px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+}
+.template .container .box .buy img{
+    width:35px;
+}
+.template .container .box .buy .price{
+    margin-left: 15px;
+}
+.template .container .box .buy .price h5{
+    font-weight: var(--font-weight);
+
+}
+.template .container .box .buy .price span{
+    font-size: 14px;
+    opacity: var(--opcity-tow);
+}
+.template .container .box .buy a{
+    font-size: 12 px;
+    margin-top: 10px;
+    text-align: end;
+}
+.template .container .box .buy a:hover{
+    opacity: var(--opcity-one);
+    text-decoration: none;
+}
+
+/* End Buy */
+/* Start button */
+.template .container .box  .button{
+    margin: var(--main-margin);
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+.template .container .box  .button input:hover{
+    opacity: var(--opcity-one);
+    cursor: pointer;
+}
+.template .container .box  .button input{
+    margin-bottom: 20px;
+    padding: 11px;
+    border: none;
+    border-radius: 20px;
+    width: 290px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 6px 14px 11px -4px rgb(177 174 174);
+}
+.template .container .box  .button a{
+    text-decoration: none;
+    font-size: 15px;
+    opacity: var(--opcity-tow);
+    font-weight: var(--font-weight);
+    color: black;
+}
+.template .container .box  .button a:hover{
+    opacity: 1;
+}
+/* End button */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
